@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Yuvraj's Portfolio</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    #hero h1:nth-child(3) {
+      color: orange;
+    }
+
+    /* #hero h1:nth-child(3) {
+      animation: text_reveal_name 0.5s ease forwards;
+      animation-delay: 3s;
+    } */
+
+    /* .my_name {
+      color: orange;
+      font-family: "Dancing Script", cursive;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    } */
+    .name {
+
+      font-family: "Dancing Script", cursive;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>D</span>ATA <span>S</span>cientist</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#services" data-after="Service">Specialization</a></li>
+            <li><a href="#projects" data-after="Projects">Projects</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section -->
+
+
+  <section id="hero">
+    <div class="hero container">
+      <video autoplay muted loop id="video-background">
+        <source src="video/abc.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Hello, <span></span></h1>
+          <h1>My Name is <span></span></h1>
+          <!-- <h1 class="my_name">YUVRAJ SINGH</h1> -->
+          <h1 class="name">Yuvraj singh</h1>
+          <p>I am a Machine Learning Enthusiast and <br> the Winner of SIH23. <span></span></p>
+          <a href="#projects" type="button" class="cta">Projects</a>
+        </div>
+        <div class="image">
+          <img src="img/mypic.png" alt="">
+        </div>
+        <div class="rectangle"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- End Hero Section -->
+
+
+  <!-- Service Section -->
+  <section id="services">
+    <div class="services container">
+      <div class="service-top">
+        <h1 class="section-title">Spec<span>ializa</span>tion</h1>
+        <p>These are the skills I have acquired; while I have proficiency in various other areas,
+          these are the primary ones in which I am fluent.</p>
+      </div>
+      <div class="service-bottom">
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>machine learning.</h2>
+          <p>I have a strong background in machine learning and have worked on projects such as a language translation
+            tool,
+            sentiment analysis, gender prediction, plot prediction, and many more.
+          </p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>Java Programmer</h2>
+          <p>In my capacity as a Java Programmer at CodSoft, I've effectively executed three comprehensive projects,
+            highlighting my expertise in Java, Swing, and MySQL.
+            Proficient in crafting user-friendly GUIs, I leverage tools such as Apache NetBeans and IntelliJ IDEA to
+            ensure efficient
+            and effective development.</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>Frontend Developer</h2>
+          <p>My proficiency extends to HTML, CSS, and JavaScript, allowing me to comprehend and write prebuilt code
+            effectively. I have successfully developed my portfolio from scratch. Additionally, for SIH23,
+            I created two websites—an Aadhaar card website and a service website—to test machine learning models.</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>Data Analysis</h2>
+          <p>I am familiar with Python libraries such as Matplotlib, Scikit-Learn, Pandas, NumPy, Seaborn, and more. In
+            addition to that, I have proficiency in tools like Excel and Power BI.
+            My knowledge of SQL enables me to perform tasks such as data visualization, cleaning, and plotting</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Service Section -->
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title">Recent <span>Projects</span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Language translator</h1>
+            <p>The language translator tool was built using NLP (Natural Language Processing), machine learning, and
+              basic concepts of deep learning. It leveraged transformers, Hugging Face, and dataset libraries.
+              Through effective data cleaning and management, a robust language translator was developed, capable of
+              translating English to Hindi.</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/LT.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Sentimental Analysis</h1>
+
+            <p>The Sentiment Analysis project was designed to analyze and understand the sentiments expressed in textual
+              data. This project leverages Natural Language Processing (NLP) techniques and machine learning algorithms
+              to determine the emotional tone of a given piece of text.
+              The primary goal is to classify the sentiment of the text into categories such as positive, negative, or
+              neutral.</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/SA.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Gender and Age Predictor</h1>
+            <p>The Age and Gender Predictor model is a powerful machine learning application designed to predict the age
+              and gender of individuals based on facial features. Utilizing advanced algorithms and a trained neural
+              network, the model takes input images and quickly provides accurate predictions. The user interface is
+              simple, allowing users to easily input images for analysis. The model's potential applications include
+              marketing, customer analytics, and security. Continuous updates focus on improving accuracy,
+              and ethical considerations regarding privacy are paramount in the model's development and implementation.
+            </p>
+          </div>
+          <div class="project-img">
+            <img src="./img/AnGP.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Plot Prediction</h1>
+            <p>The Plot Price Prediction project aims to forecast the prices of plots in Bangalore using machine
+              learning techniques. By leveraging historical data and relevant features,
+              this project aims to create a predictive model that estimates the price of real estate plots in Bangalore.
+            </p>
+          </div>
+          <div class="project-img">
+            <img src="./img/PP.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Movie Recommender</h1>
+            <p>
+              The provided Python script utilizes Streamlit to create a Movie Recommender System.
+              Users select a movie from a dropdown, click the "Show Recommendations" button, and receive a list of
+              recommended movies based on similarity.
+              Movie data and similarity matrices are loaded from pickled files, and movie posters are fetched from
+              "https://www.themoviedb.org/". The recommendations include movie titles and posters, presented in a
+              responsive layout. Custom CSS styling enhances the Streamlit app's appearance, featuring a green-themed
+              button and a light background color.</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/img-1.png" alt="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="./img/about img.png" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span>me</span> and my <span>SKILLS</span></h1>
+        <h2>Still Developing myself</h2>
+        <p>Experienced professional with a strong background in machine learning and software development. As a Machine
+          Learning Contributor and Frontend Developer at Smart India Hackathon 2023, I led the development of a dynamic
+          translation model integrated into a website through an API. In my role as a Java Programmer at CodSoft, I've
+          successfully executed three comprehensive projects, showcasing expertise in Java, Swing, and MySQL. Proficient
+          in designing user-friendly GUIs using tools like Apache NetBeans and IntelliJ IDEA. Committed to innovation
+          and excellence in every project. <br> <br>
+          <b>Coding : </b>Java , Data Structures and Algorithms, Python, SQL, Machine Learning, Data
+          Cleaning, Data Visualization (Tableau, Power BI), Deep Learning (TensorFlow, Keras), NLP, docker.<br>
+          <b>Databases : </b> DBMS, Flask. <br>
+          <b>Web Dev : </b> Html, css, JavaScript , Figma.
+        </p>
+        <a href="https://drive.google.com/file/d/1TJfONTBasM3KS5LTXEmzaeZccaoYLcHb/view?usp=drive_link" class="cta"
+          target="_blank">Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title">Contact <span>info</span></h1>
+      </div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2>+91 7827560801</h2>
+            <h2>+91 7060214027</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>yuvraj.singh.mait@gmail.com</h2>
+            <h2>ys29062002@gmail.com</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+          <div class="contact-info">
+            <h1>Address</h1>
+            <h2>IP Extension , Patparganj , East Delhi</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>L</span>ET'S <span>C</span>ONNECT</h1>
+      </div>
+      <!-- <h2>Lets Connect</h2> -->
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://www.instagram.com/yuvraj.singh7061?utm_source=qr&igsh=bGtoaDJlaXRjbWRt" target="_blank"><img
+              src="https://img.icons8.com/FFC0CB/instagram" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.linkedin.com/in/yuvraj-singh-ml/" target="_blank"><img
+              src="https://img.icons8.com/0000FF/linkedin" /></a>
+
+        </div>
+      </div>
+      <p>ALL of me © 2023 Yuvraj. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
+</body>
+
+</html>
